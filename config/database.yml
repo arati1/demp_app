@@ -15,16 +15,16 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: demp_app_development
+  database: demp_app
   pool: 5
-  username: demp_app
-  password:
+  username: testGradeables
+  password: gradeables
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
-  #port: 5432
+  host: localhost
+  port: 5433
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -43,13 +43,19 @@ test:
   encoding: unicode
   database: demp_app_test
   pool: 5
-  username: demp_app
-  password:
+  username: testGradeables
+  password: gradeables
+  host: localhost
+  port: 5433
 
+  
 production:
   adapter: postgresql
   encoding: unicode
   database: demp_app_production
   pool: 5
-  username: demp_app
-  password:
+  username: testGradeables
+  password: gradeables
+  host: localhost
+  port: 5433
+
